@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Jason Wu">
+    <title>Data Journalism with D3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Relative CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Intoduction -->
+        <div class="row">
+            <div class="col-xs-12 col-md-12 mt-4 mb-6">
+                <h1 class="text-center">Data Journalism</h1>
+            </div>
+        </div>
+
+        <!-- D3 Scatter Plot -->
+        <div class="row">
+            <div class="col-xs-12 col-md-9 my-4">
+                <div id="scatter"></div>
+            </div>
+        </div>
+
+        <!-- Analysis -->
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div class="article">
+                    <h2>Interactive Data</h2>
+                    <p>All data values are bound to the circles allowing easy access when clicking the labels.
+                        Hover on the data to display a d3-tooltip that displays the element's data.
+                    </p>
+                    <h2>General Observations</h2>
+                    <p>Obesity, smoking, and lacking healthcare percentage all positively correlate with poverty
+                        percentage.
+                        From our visualization, we see that smoking has a slightly more positively correlated with
+                        poverty than the other two.
+                        While it seems older populations generally tend to have a higher population that smokes,
+                        they also seem to not lack healthcare, or have a negative correlation.
+                    </p>
+                    <p>When looking at percentage of the population that smokes and percentage in poverty, we see a
+                        positive correlation.
+                        Utah does seem to be an extreme value in this case with only 11.7% of the population in poverty
+                        and only having 9.7% of the population smoke.
+                        Since household income and poverty percentage has a negative correlation.
+                        Percentage of the population that smokes does tend to decrease as the household median income
+                        increases.
+                    </p>
+                    <p>As the rate of poverty increases, the population tend to have a higher obesity rate,
+                        have a population that more generally smokes, and lack healthcare. It seems that Utah has
+                        a younger population that while, has an average obesity rate, has a lower population that
+                        smokes.
+                        Meanwhile Texas, also having a younger population has a higher than average obesity rate, but
+                        more noticeably
+                        has a population that lacks healthcare. While only having a median population age of around 34,
+                        24.9% of the population
+                        does not have healthcare. Thankfully this data is in 2014 and around 2019, Texas has seen major
+                        improvements regarding its population's healthcare.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <!-- Relative JS -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>

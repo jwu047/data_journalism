@@ -1,0 +1,63 @@
+html { 
+    min-height: 100%;
+}
+
+/* Hover text */
+.aText {
+    font-size: 16px;
+    text-anchor: middle;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.active {
+    fill: black;
+    text-anchor: middle;
+}
+
+.inactive {
+    fill: lightgrey;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inactive:hover {
+    fill: black;
+}
+
+/* Circles */
+.stateText {
+    fill: black;
+    text-anchor: middle;
+}
+
+.stateCircle {
+    fill: lightblue;
+    stroke: lightgrey;
+}
+
+.chart {
+    display: block;
+}
+
+.d3-tip {
+    padding: 6px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+
+/* circles */
+
+
+@media screen and (max-width: 500px) {
+    .stateText {
+        display: none;
+    }
+    .aText {
+        font-size: 14px;
+    }
+}
