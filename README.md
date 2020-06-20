@@ -20,10 +20,29 @@ You're going to include more demographics and more risk factors. Place additiona
 
 #### 2. Incorporate d3-tip
 
-Use the `d3-tip.js` plugin developed by [Justin Palmer](https://github.com/caged/d3-tip).
+Use the `d3-tip.js` plugin developed by [Justin Palmer](https://github.com/caged/d3-tip). Include a d3-tip for each bubble to display the current x and y values.
 
-While the ticks on the axes allow us to infer approximate values for each circle, it's impossible to determine the true value without adding another layer of data. Enter tooltips: developers can implement these in their D3 graphics to reveal a specific element's data when the user hovers their cursor over the element. Add tooltips to your circles and display each tooltip with the data that the user has selected. 
+* Refer to [David Gotz's example](https://bl.ocks.org/davegotz/bd54b56723c154d25eedde6504d30ad7) as a guide for d3-tip.
 
 ![8-tooltip](Images/8-tooltip.gif)
 
-* Check out [David Gotz's example](https://bl.ocks.org/davegotz/bd54b56723c154d25eedde6504d30ad7) to see how you should implement tooltips with d3-tip.
+#### 3. Heroku Deploy
+
+Deploy static website with Heroku. 
+
+Create an index.php file within the main directory and place the following:
+
+```php
+<?php header( 'Location: /index.html' ) ;  ?>
+```
+
+Within the main directory in Git. Use the Heroku CLI to create an application and deploy to Heroku.
+
+```
+git init
+git add .
+git commit -m "First deploy"
+heroku apps:create my-site-name
+git push heroku master
+```
+
